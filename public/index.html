@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata and external resources -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+
+  <!-- External CSS for custom styling -->
+  <link rel="stylesheet" href="style.css"/>
+  
+  <!-- Bootstrap CSS for layout and styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+</head>
+<body>
+
+  <!-- Full height container to vertically center content -->
+  <div class="container-fluid d-flex vh-100">
+    <div class="row flex-fill">
+
+      <!-- Left column: Signup form and welcome message -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center bg-white">
+        
+        <!-- Welcome message and logo -->
+        <div class="text-center mb-3">
+          <img src="logo.png" alt="TheCubeFactory" class="logo"/>
+          <h2 class="font-weight-bold">Welcome back, Travel Buddies!</h2>
+        </div>
+
+        <!-- Signup form -->
+        <form id="signupForm" class="w-75">
+          
+          <!-- Full Name input -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name" required />
+          </div>
+          
+          <!-- Phone Number input -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="10-digit number" required />
+          </div>
+          
+          <!-- Email input -->
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Email address" required />
+          </div>
+          
+          <!-- Password input -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" required />
+          </div>
+          
+          <!-- Repeat Password input -->
+          <div class="form-group">
+            <label for="repeatPassword">Repeat Password</label>
+            <input type="password" class="form-control" id="repeatPassword" required />
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-purple btn-block">Sign up</button>
+
+          <!-- Link to login page -->
+          <p class="text-center mt-2">have an account? <a href="login.html">Sign in</a></p>
+        </form>
+      </div>
+
+      <!-- Right column: illustration image for larger screens -->
+      <div class="col-md-6 bg-purple d-none d-md-flex justify-content-center align-items-center">
+        <img src="illustration.png" class="img-fluid" alt="Illustration" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Custom JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

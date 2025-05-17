@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata and external resources -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+
+  <!-- External CSS for custom styling -->
+  <link rel="stylesheet" href="csslogin.css"/>
+  
+  <!-- Bootstrap CSS for layout and styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+</head>
+<body>
+
+  <!-- Full height container to vertically center content -->
+  <div class="container-fluid d-flex vh-100">
+    <div class="row flex-fill">
+
+      <!-- Left column: Login form and welcome message -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center bg-white">
+
+        <!-- Welcome message and logo -->
+        <div class="text-center mb-3">
+          <img src="logo.png" alt="TheCubeFactory" class="logo"/>
+          <h2 class="font-weight-bold">Welcome back, Travel Buddies!</h2>
+        </div>
+
+        <!-- Login form -->
+        <form id="loginForm" class="w-75">
+          
+          <!-- Email input field -->
+          <div class="form-group">
+            <label for="loginEmail">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" placeholder="Email address" required />
+          </div>
+
+          <!-- Password input field -->
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required />
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-purple btn-block">Login</button>
+
+          <!-- Link to signup page -->
+          <p class="text-center mt-2">Don't have an account? <a href="index.html">Sign up</a></p>
+
+        </form>
+      </div>
+
+      <!-- Right column: illustration image for larger screens -->
+      <div class="col-md-6 bg-purple d-none d-md-flex justify-content-center align-items-center">
+        <img src="illustration.png" class="img-fluid" alt="Illustration" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript file for login logic -->
+  <script src="loginscript.js"></script>
+</body>
+</html>

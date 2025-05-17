@@ -1,0 +1,57 @@
+/* Ensure the html and body take full height and prevent scrolling */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Center the body content using Flexbox and apply background color */
+body {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  background-color: #b183ee; /* Light purple background */
+}
+
+/* Style for the card container (form box) */
+.card {
+  width: 100%; /* Full width by default */
+  max-width: 400px; /* Restrict max width */
+  padding: 2rem; /* Inner spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft drop shadow */
+}
+
+/* Round the edges of form inputs */
+.form-control {
+  border-radius: 6px;
+}
+
+/* Style the logo image */
+.logo {
+  max-height: 180px; /* Limit height */
+  max-width: 200px; /* Limit width */
+  margin-bottom: 20px; /* Space below the image */
+  margin-bottom: -80px; /* Override: pull logo upwards (possible design quirk) */
+}
+
+/* Style for the main heading */
+h2 {
+  margin-top: 3px; /* Small top margin */
+  color: rgb(62, 62, 149); /* Dark blue text */
+}
+/* Utility class for setting purple background with white text */
+.bg-purple {
+  background-color: #9c6ade; /* Light purple background */
+  color: #fff; /* White text */
+}
+/* Custom purple button style */
+.btn-purple {
+  background-color: #6a38b2; /* Medium purple */
+  color: #fff; /* White text */
+}
+
+/* Darker shade on hover for .btn-purple */
+.btn-purple:hover {
+  background-color: #5c2a9b; /* Darker purple for hover effect */
+}

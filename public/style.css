@@ -1,0 +1,53 @@
+/* Apply universal box-sizing and remove default margin/padding for all elements */
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Set full height and remove scrollbars from HTML and Body */
+html,
+body {
+  height: 100%; /* Make page fill the viewport */
+  overflow: hidden; /* Prevent scrollbars */
+  font-family: "Segoe UI", sans-serif; /* Set default font */
+}
+
+/* Center all content vertically and horizontally using Flexbox */
+body {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Horizontally center items */
+  justify-content: center; /* Vertically center items */
+}
+
+/* Utility class for setting purple background with white text */
+.bg-purple {
+  background-color: #9c6ade; /* Light purple background */
+  color: #fff; /* White text */
+}
+
+/* Custom purple button style */
+.btn-purple {
+  background-color: #6a38b2; /* Medium purple */
+  color: #fff; /* White text */
+}
+
+/* Darker shade on hover for .btn-purple */
+.btn-purple:hover {
+  background-color: #5c2a9b; /* Darker purple for hover effect */
+}
+
+/* Style for logo image */
+.logo {
+  max-height: 180px; /* Restrict logo height */
+  max-width: 200px; /* Restrict logo width */
+  margin-bottom: 20px; /* Spacing below the logo */
+  margin-bottom: -80px; /* (Conflicting value) pulls logo up – design-specific */
+}
+
+/* Style for heading */
+h2 {
+  margin-top: 3px; /* Small spacing above heading */
+  color: rgb(62, 62, 149); /* Dark blue heading color */
+}
