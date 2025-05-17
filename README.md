@@ -1,3 +1,4 @@
+![page](https://github.com/user-attachments/assets/ff91f8c8-3268-4a02-83eb-b1839222a50b)
 # SignupApp
 
 A secure and scalable backend application for user registration, built using Node.js, Express, and MongoDB. The application provides a robust API for managing user sign-up, including input validation, password hashing, and database storage. It serves as a boilerplate for authentication-related backend services and can be easily integrated with any frontend.
